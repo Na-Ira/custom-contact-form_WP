@@ -1,4 +1,4 @@
-## Testimonials Video Slider WordPress
+## Custom Contact Form WordPress
 
 :white_check_mark: PHP version >= 7.2    
 :white_check_mark: Wordpress - 6.1.1   
