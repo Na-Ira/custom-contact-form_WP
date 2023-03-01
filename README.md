@@ -23,6 +23,7 @@ For .php:
       <div class="contact-container">
          ```php
             <?php echo do_shortcode("[contact_form]") ?>
+         ```
       </div>
 ```
 
