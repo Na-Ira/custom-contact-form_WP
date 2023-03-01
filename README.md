@@ -8,6 +8,8 @@ The plugin must be installed in the WordPress directory `/wp-content/plugins/`.
 In the plugin directory, create a folder `custom-contact-form` and place the plugin files in it.    
 It should be like this: `/wp-content/plugins/custom-contact-form/`.   
 
+To send emails correctly without getting into spam, you need to install an SMTP plugin, such as [Easy WP SMTP](https://uk.wordpress.org/plugins/easy-wp-smtp/)  or another one, as you prefer.
+
 To display the styles correctly, the form must be placed in the `.contact-container`.   
 
 For editor:    
