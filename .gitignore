@@ -1,0 +1,12 @@
+#workspace
+*.code-workspace
+logs/
+
+#configs
+*.config
+.vscode
+.DR_Store
+*.code-workspace
+*.sql
+*.log
+wp-config.php
