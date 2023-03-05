@@ -30,4 +30,4 @@ For .php:
       </div>
 ```
 
-[View Form](https://nastmobile.com/web-test/plugin-example-custom-contact-form/)
+[View Form](https://folio-ira.nastmobile.com/contact-form/)
