@@ -1,0 +1,253 @@
+@import url(./variables.css);
+:focus-visible {
+  outline: none;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  -webkit-transition: background-color 600000s 0s, color 600000s 0s;
+  transition: background-color 600000s 0s, color 600000s 0s;
+}
+::-moz-placeholder {
+  font-size: 1rem;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.5);
+  line-height: 1.5;
+}
+:-ms-input-placeholder {
+  font-size: 1rem;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.5);
+  line-height: 1.5;
+}
+::-webkit-input-placeholder {
+  font-size: 1rem;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.5);
+  line-height: 1.5;
+}
+::-ms-input-placeholder {
+  font-size: 1rem;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.5);
+  line-height: 1.5;
+}
+::placeholder {
+  font-size: 1rem;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.5);
+  line-height: 1.5;
+}
+.p-relative {
+  position: relative;
+}
+/* button */
+.get-in-torch-form-container .btn {
+  border-radius: 2.5625rem;
+  font-weight: 500;
+  padding: 1.25rem 3.8125rem;
+  line-height: normal;
+}
+.get-in-torch-form-container .btn.btn-success {
+  background-image: -o-linear-gradient(330deg,var(--basetwo),var(--colorgradientone));
+  background-image: linear-gradient(120deg,var(--basetwo),var(--colorgradientone));
+  border-color: var(--basetwo);
+  border: 2px solid rgb(255 90 0 / 50%);
+  -webkit-box-shadow: 0 0.75rem 1.5rem 0 rgba(255, 90, 0, 0.28);
+          box-shadow: 0 0.75rem 1.5rem 0 rgba(255, 90, 0, 0.28);
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  position: relative;
+}
+.get-in-torch-form-container .btn.btn-success span {
+  position: relative;
+  z-index: 2;
+}
+.get-in-torch-form-container .btn.btn-success::before {
+  content: '';
+  display: inline-block !important;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  border: 2px solid rgb(255 90 0 / 50%);
+  background-image: -o-linear-gradient(140deg,var(--basetwo),var(--colorgradientone));
+  background-image: linear-gradient(310deg,var(--basetwo),var(--colorgradientone));
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  top: -2px;
+  left: -2px;
+  overflow: hidden;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+.get-in-torch-form-container .btn.btn-success:hover::before {
+  opacity: 1;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.get-in-torch-form-container .btn.btn-success:focus {
+  -webkit-box-shadow: 0 0 0 0.25rem rgb(255 90 0 / 30%);
+          box-shadow: 0 0 0 0.25rem rgb(255 90 0 / 30%);
+  border: 2px solid rgb(255 90 0 / 50%);;
+}
+/* end button */
+
+.get-in-torch-form-container input, 
+.get-in-torch-form-container textarea {
+  background: rgba(0, 0, 0, .2);
+  color: #d0daf0;
+}
+.dark-mode .get-in-torch-form-container .form-control {
+  border: 0.067rem solid rgba(255,255,255,.2);
+  background: rgba(33,37,41,.6);
+}
+.purple-mode .get-in-torch-form-container .form-control {
+  border: 0.067rem solid rgba(255,255,255,.2);
+  background: rgba(24,0,38,.65);
+}
+.contact-container {
+  position: relative;
+}
+.contact-container .contact-form {
+  width: 100%;
+}
+.contact-container a {
+  display: block;
+  color: var(--accent);
+  font-size: 1.25rem;
+  margin-bottom: 0.875rem;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.contact-container a:hover {
+  color: var(--hover);
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  text-decoration: none;
+}
+.contact-container p {
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+.contact-container button {
+  margin-top: 1.875rem;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+          align-items: center;
+}
+.contact-container button .submit-btn {
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-box;
+  display: inline-flex;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 0.625rem;
+}
+.form-control {
+  border: 0.0625rem solid #c9ccd4;
+  border-radius: 0.375rem;
+  padding: 1.0625rem 1.5rem;
+}
+.get-in-torch-form-container .form-control:focus {
+  border: 0.0625rem solid rgb(245 249 250/ 85%);
+  color: #d0daf0;
+  -webkit-box-shadow: 0 0 0 0.25rem rgb(143 143 143 / 25%);
+          box-shadow: 0 0 0 0.25rem rgb(143 143 143 / 25%);
+}
+.get-in-torch-form-container .submit-btn svg {
+  display: inline-block;
+  margin-top: -3px;
+}
+.message-success {
+  padding: 0.5rem 1.5rem;
+  background: #3b7a64;
+  border-radius: 0.375rem;
+  text-align: center;
+  position: absolute;
+  bottom: -5rem;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+.error-name,
+.error-email,
+.error-comment {
+  display: inline-block;
+  font-size: 11px;
+  position: absolute;
+  top: -30px;
+  color: #ffffff;
+  border: 1px solid #e74c3c;
+  padding: 5px 10px;
+  line-height: 1.1;
+  background: #e74c3c;
+  border-radius: 0.375rem;
+  -webkit-animation-name: slide-In;
+          animation-name: slide-In;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+.error-name:after,
+.error-email:after,
+.error-comment:after {
+  content: "";
+  position: absolute;
+  left: 20px;
+  bottom: -10px;
+  border: 5px solid transparent;
+  border-top: 5px solid #e74c3c;
+}
+span[class^="error-"] + input.form-control,
+span[class^="error-"] + textarea.form-control {
+  border-color: #e74c3c;
+}
+
+/*
+ keyframes ===============
+ */
+ @-webkit-keyframes slide-In {
+  0% {
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0rem);
+            transform: translateY(0rem);
+    opacity: 1;
+  }
+  0% {
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
+    opacity: 0;
+  }
+}
+ @keyframes slide-In {
+  0% {
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0rem);
+            transform: translateY(0rem);
+    opacity: 1;
+  }
+  0% {
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
+    opacity: 0;
+  }
+}

@@ -1,7 +1,7 @@
 <?php
 /**
  * 
- * Custom Contact form functions
+ * Get in Touch Form functions
  *
  */
 
@@ -20,19 +20,19 @@ function ajax_form_scripts() {
 	/**
 	 * Styles
 	 */
-	wp_register_style( 'contact-form',
-		plugins_url( 'css/contact-form.css', __FILE__ ),
+	wp_register_style( 'get-in-touch-form',
+		plugins_url( 'css/get-in-touch-form.css', __FILE__ ),
 		array(),
 		time()
 		);
-	wp_enqueue_style( 'contact-form' );
+	wp_enqueue_style( 'get-in-touch-form' );
 
 	/**
 	 * Ajax script file
 	 */
 	wp_enqueue_script(
-		'contact-form',
-		plugins_url( 'js/contact-form.js', __FILE__ ),
+		'get-in-touch-form',
+		plugins_url( 'js/get-in-touch-form.js', __FILE__ ),
 		array( 'jquery' ),
 		'1.0',
 		true
@@ -42,11 +42,11 @@ function ajax_form_scripts() {
 	 * Setting ajax object data
 	 */
 	wp_localize_script(
-		'contact-form',
-		'contact_form_object',
+		'get-in-touch-form',
+		'get_in_touch_form_object',
 		array(
 			'url'   => admin_url( 'admin-ajax.php' ),
-			'nonce' => wp_create_nonce( 'contact-form-nonce' ),
+			'nonce' => wp_create_nonce( 'get-in-touch-form-nonce' ),
 		)
 	);
 }

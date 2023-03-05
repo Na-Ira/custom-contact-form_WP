@@ -1,5 +1,5 @@
 jQuery(function ($) {
-  var $form = $("#contact_form");
+  var $form = $("#get_in_touch_form");
   var $submit = $("#form_contact_submit");
 
   function resetForm() {
@@ -13,10 +13,10 @@ jQuery(function ($) {
        * Sending values of the fields
        */
       var options = {
-        url: contact_form_object.url,
+        url: get_in_touch_form_object.url,
         data: {
-          action: "contact_form_action",
-          nonce: contact_form_object.nonce,
+          action: "get_in_touch_form_action",
+          nonce: get_in_touch_form_object.nonce,
           data: formData,
         },
         type: "POST",
@@ -25,7 +25,7 @@ jQuery(function ($) {
           /**
            * Change the inscription on the button when sending
            */
-          $submit.text("Sending...");
+          $submit.html("<span>Sending...</span>");
         },
         success: function (request, xhr, status, error) {
           var newRequestData = request.data;
@@ -40,7 +40,7 @@ jQuery(function ($) {
                 '<div class="message-success">' + newRequestData + "</div>"
               )
               .slideDown();
-            $submit.text("Submit Message");
+            $submit.html("<span>Submit Message</span>");
           } else {
             /**
              * If the fields are empty, display messages
@@ -73,7 +73,7 @@ jQuery(function ($) {
                 });
               });
             });
-            $submit.text("Something went wrong......");
+            $submit.html("<span>Something went wrong......</span>");
           }
 
           setTimeout(() => {
@@ -88,7 +88,7 @@ jQuery(function ($) {
           // console.log(request);
         },
         error: function (request, status, error) {
-          $submit.text("Something went wrong......");
+          $submit.html("<span>Something went wrong......</span>");
         },
       };
       /**

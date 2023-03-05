@@ -1,9 +1,9 @@
 <?php 
 
-add_action( 'wp_ajax_contact_form_action', 'contact_form_action_callback' );
-add_action( 'wp_ajax_nopriv_contact_form_action', 'contact_form_action_callback' );
+add_action( 'wp_ajax_get_in_touch_form_action', 'get_in_touch_form_action_callback' );
+add_action( 'wp_ajax_nopriv_get_in_touch_form_action', 'get_in_touch_form_action_callback' );
 
-function contact_form_action_callback() {
+function get_in_touch_form_action_callback() {
 
 	/**
 	 * Error array
@@ -13,7 +13,7 @@ function contact_form_action_callback() {
 	/**
 	 * If it does not pass the nonce check, we block sending
 	 */
-	if ( !wp_verify_nonce( $_POST['nonce'], 'contact-form-nonce' ) ) {
+	if ( !wp_verify_nonce( $_POST['nonce'], 'get-in-touch-form-nonce' ) ) {
 		wp_die( 'The data was sent from an invalid address' );
 	}
 
