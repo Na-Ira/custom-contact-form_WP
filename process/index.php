@@ -61,12 +61,12 @@ function get_in_touch_form_action_callback() {
 		 * Find out from which site the email came
 		 */
 		$home_url = wp_parse_url( home_url() );
-		$subject = 'Email from John Doe';
+		$$subject = 'Email from ' . $home_url['host'];
 
 		/**
 		 * Email recipients
 		 */
-		$email_to = 'narinaua@gmail.com';
+		$email_to = 'your_email_address@domen.com';
 		$email_from = get_option( 'admin_email' );
 
 		/**
