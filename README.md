@@ -1,8 +1,7 @@
-## Custom Contact Form WordPress
+## Get in Touch Form Custom WordPress Plugin
 
 :white_check_mark: PHP version >= 7.2    
-:white_check_mark: Wordpress - 6.1.1   
-:white_check_mark: Animate On Scroll - [AOS.js](https://michalsnik.github.io/aos/)    
+:white_check_mark: Wordpress - 6.1.1     
 
 The plugin must be installed in the WordPress directory `/wp-content/plugins/`.    
 In the plugin directory, create a folder `get-in-touch-form` and place the plugin files in it.    
