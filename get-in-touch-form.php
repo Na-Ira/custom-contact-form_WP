@@ -9,6 +9,13 @@
  * Version: 1.0
  **/
 
+//=================================================
+// Security: Abort if this file is called directly
+//=================================================
+if ( ! defined( 'ABSPATH' ) ) {
+	die( 'Invalid request.' );
+}
+
  /**
   * Initializing plugin code (must have in main file)
   */
